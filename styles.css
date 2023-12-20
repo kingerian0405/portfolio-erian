@@ -1,0 +1,457 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(49, 64, 102);
+}
+
+/* background-image: url('fondo.jpg');  Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen 
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo 
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+/* Estilos de la barra de navegación */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; /* Ancho de la barra de navegación */
+    height: 100%;
+    background-color:rgb(70, 78, 97);
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+.sidebar nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: rgb(28, 27, 32);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Estilos del contenido principal */
+.content  {
+    margin-left: 200px; /* Asegura que el contenido no quede detrás de la barra de navegación */
+    padding: 20px;
+}
+
+.imagen {
+    height: 200px;
+    width: 200px;
+}
+/* Estilos del botón de descarga */
+
+.sidebar nav ul li:hover {
+    background-color: rgb(30, 31, 75);
+}
+.mitaderian{
+    color:  white;
+}
+/* Estilos de la línea divisoria */
+.content > section {
+    
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content > section::after {
+    content: "";
+    position: absolute;
+    bottom: 2;
+    left: 0;
+    width: 100%;
+    height: 1px;}
+/* Estilos para cambiar el color del enlace en la navegación al desplazarse */
+.sidebar nav ul li a.active {
+    color: rgb(138, 139, 146);
+}
+/* Estilos para los logos y lenguajes */
+
+.imagen1{
+    max-height: 450px;
+    max-width: 450px;
+    margin-right: 20px;
+}
+
+.imagen2{
+    max-height:580px;
+    max-width:580px;
+}
+
+.center
+{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: rgb(40, 39, 46);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-size: 20px;
+}
+
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+
+.language_1 {
+    background-color: rgb(40, 39, 46);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.language_1 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.language_1 span {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.language_1:hover {
+    transform: scale(1.14);
+}
+
+.language_1:hover img {
+    transform: scale(1.15);
+}
+
+.language_2 {
+    background-color: rgb(40, 39, 46);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.language_2 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.language_2 span {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.language_2:hover {
+    transform: scale(1.14);
+}
+
+.language_2:hover img {
+    transform: scale(1.15);
+}
+
+.container {
+    text-align: center;
+}
+
+.text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+
+.text {
+    display: inline-block;
+    animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+    font-family: 'Sans-serif'; /* Cambiar a la fuente Sans-serif que desees */
+    font-size: 24px; /* Cambiar el tamaño de fuente según tus preferencias */
+    color: black; /* Cambiar el color de texto a negro */
+    margin-bottom: 200px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #333;
+    }
+}
+
+.yo {
+    text-align: center;
+    color: gray;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+.project-header{
+    text-align: center;
+}
+#sobre-mi{
+    margin-bottom: 30%;
+    border-top: 2px solid;
+   
+}
+.carousel-container { 
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px; /* Ajusta el ancho máximo según tus necesidades */
+    max-height: 700px;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide > img {
+    width: 900px; /* Ajusta el ancho máximo según tus necesidades */
+    height: 500px;
+  }
+  
+  /* .description { */
+ /*   margin-top: 10px;*/
+
+  /*    width: 900px; /* Ajusta el ancho máximo según tus necesidades */
+  /*    height: 80px;*/
+
+  /*  }*/
+  
+  .carousel-container .description {
+    
+    text-align: center;
+    background-color: rgba(93, 99, 117, 0.7);
+    color: white;
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    padding: 10px; /* Ajustar el relleno según tus preferencias */
+    font-size: 14px; /* Ajustar el tamaño de la fuente para dispositivos móviles */
+
+}
+
+  #sobre-mi{
+margin-left: 200px;
+  }
+  #sobre-mi > h4 {
+    text-align: center;
+    margin-left: 20px; 
+  }
+  
+
+/* Estilo para el contenedor de imágenes */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 220px;
+    margin-right: 20px;
+}
+
+/* Estilo para cada imagen y su descripción */
+.image {
+    width: 30%; /* Ajusta el ancho según tus preferencias */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo para todas las imágenes dentro de .image */
+.image > img {
+    width: 300px; /* Todas las imágenes tendrán el mismo ancho */
+    height: 300px; /* Ajusta la altura máxima según tus preferencias */
+}
+
+.image p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: rgb(40, 39, 46);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* habilidades */
+.skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+    margin-left: 100px;
+}
+
+.programmer-skills, .soft-skills {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(64, 73, 97);
+    margin-left: 100px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.skill img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.stars {
+    font-size: 20px;
+    margin-left: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        width: 100%; /* Opcional: para ocupar todo el ancho en pantallas pequeñas */
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    
+    .content {
+        margin-left: 0px;
+        
+    }
+    body {
+        margin-left: 0px;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .programmer-skills, .soft-skills {
+        width: 45%;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: rgb(64, 73, 97);
+    }
+    .carousel-container {
+        /* Otros estilos del carrusel */
+        max-width: 100%; /* Hacer que el carrusel se adapte al ancho de su contenedor */
+    }
+    
+    .carousel-container .slide > img {
+        width: 100%; /* Hacer que las imágenes del carrusel ocupen todo el ancho disponible */
+        max-height: 400px; /* Ajustar la altura proporcionalmente para evitar el recorte */
+    }
+    
+    /* Estilos para imágenes en la sección de educación */
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 10px; /* Ajusta los márgenes según tu diseño */
+        margin-right: 10px; /* Ajusta los márgenes según tu diseño */
+    }
+    
+    .image {
+        width: 100%; /* Hacer que las imágenes ocupen todo el ancho disponible */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .image > img {
+        width: 100%; /* Hacer que las imágenes ocupen todo el ancho disponible */
+         height: auto;
+    }
+    .carousel-container .description {
+        font-size: 12px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        padding: 8px; /* Relleno más pequeño para pantallas pequeñas */
+    }
+    .center {
+        margin-left: 0; /* Elimina el margen izquierdo */
+    }
+    #sobre-mi{
+        margin-left:0px;
+          }
+          #sobre-mi > h4 {
+            text-align: center;
+            margin-left: 0px; 
+          }
+          .skills {
+            margin-left: 0px;
+        }
+        .programmer-skills, .soft-skills {
+            margin-left: 0px;
+        }
+}
